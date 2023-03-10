@@ -8,11 +8,19 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { MainComponent } from './main/main.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+import { TuringComponent } from './turing/turing.component';
+import { AfdComponent } from './afd/afd.component';
+import { TuringModule } from './turing/turing.module';
+import { AfdModule } from './afd/afd.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
+    TuringComponent,
+    AfdComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +39,9 @@ import { HttpClientModule } from '@angular/common/http';
     NbFormFieldModule,
     NbSelectModule,
     NbToastrModule.forRoot(),
+    MatInputModule,
+    TuringModule,
+    AfdModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,24 @@
-.divCard {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-}
-
-.divInput{
-    display: flex;
-}
-
-.header {
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 217, 225);
 }
-
-.inputInfo {
-    margin-top: 1 rem;
+.nav{
+    position: absolute;
+}
+.card{
+    width: 1200px;
+    height: 700px;
+    background-color: aqua;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.card-left, .card-right{
+    width: 50%;
+    height: 100%;
+    background-color: beige;
 }
